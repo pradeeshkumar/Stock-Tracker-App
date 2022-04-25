@@ -15,9 +15,6 @@ export const PageLayout = (props) => {
                 <a className="navbar-brand" href="/">STA Login</a>
                 { isAuthenticated ? <span>Signed In</span> : <SignInButton /> }
             </Navbar>
-            <h5><center>Welcome to the Microsoft Authentication Library</center></h5>
-            <br />
-            <br />
             {props.children}
         </>
     );
