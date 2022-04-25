@@ -1,6 +1,6 @@
 export const msalConfig = {
     auth: {
-      clientId: "cddbc001-049f-483d-b61e-350bf6c83314",
+      clientId: "ec6474ac-b18b-4d16-affe-a4efe6a3c7ba",
       authority: "https://login.microsoftonline.com/f8cdef31-a31e-4b4a-93e4-5f571e91255a", // This is a URL (e.g. https://login.microsoftonline.com/{your tenant ID})
       redirectUri: "https://dainty-licorice-4d88aa.netlify.app",
     },
