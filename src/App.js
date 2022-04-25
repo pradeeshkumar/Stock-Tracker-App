@@ -1,9 +1,11 @@
+import React from "react";
+import { PageLayout } from "./components/PageLayout";
+
 function App() {
   return (
-    <div className="App">
-      <h2>Group 2</h2>
-      <p>Welocme...</p>
-    </div>
+      <PageLayout>
+          <p>This is the main app content!</p>
+      </PageLayout>
   );
 }
 
