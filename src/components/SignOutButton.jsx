@@ -21,7 +21,7 @@ export const SignOutButton = () => {
     const { instance } = useMsal();
 
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar expand="lg">
             <Container>
                 <Navbar.Brand href="#">STA</Navbar.Brand>
                 <Button variant="secondary" className="float-end" onClick={() => signOutClickHandler(instance)}>Sign Out</Button>

@@ -13,7 +13,7 @@ export const PageLayout = (props) => {
         <>
            { isAuthenticated ? 
            <div>
-            <div className="container-fluid bg-primary">  
+            <div className="container-fluid bg-primary mb-5">  
                 <Container>
                 <SignOutButton />
                 </Container>
