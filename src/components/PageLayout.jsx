@@ -18,7 +18,7 @@ export const PageLayout = (props) => {
             </div>
            :
             <Navbar bg="primary" variant="dark">
-                <a className="navbar-brand" href="/">Logout</a>                
+                <a className="navbar-brand" href="/logout">Logout</a>                
             </Navbar>
            }
         
