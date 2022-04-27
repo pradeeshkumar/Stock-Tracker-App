@@ -13,7 +13,7 @@ export const PageLayout = (props) => {
         <>
            { isAuthenticated ? 
             <div>
-                <a className="navbar-brand" href="/">STA Login</a>
+                <div>STA Login</div>
                 <SignInButton /> 
             </div>
            :
