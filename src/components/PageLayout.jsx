@@ -15,7 +15,7 @@ export const PageLayout = (props) => {
             <div className="container-fluid">  
                 <Container>
                 <SignOutButton />
-                <Row className="bg-primary">                      
+                <Row>                      
                     <Col>{props.children}</Col>
                 </Row> 
                 </Container>

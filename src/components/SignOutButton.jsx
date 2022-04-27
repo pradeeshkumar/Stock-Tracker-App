@@ -2,6 +2,8 @@ import React from "react";
 import { useMsal } from "@azure/msal-react";
 import { logoutRequest } from "../authConfig";
 import Button from "react-bootstrap/Button";
+import Navbar from "react-bootstrap/Navbar";
+
 
 
 function signOutClickHandler(instance) {
@@ -17,6 +19,8 @@ export const SignOutButton = () => {
     const { instance } = useMsal();
 
     return (
-        <Button variant="secondary" className="mr-auto" onClick={() => signOutClickHandler(instance)}>Sign Out</Button>
+        <Navbar className="bg-primary mb-5">
+            <Button variant="secondary" className="mr-auto" onClick={() => signOutClickHandler(instance)}>Sign Out</Button>
+        </Navbar>
     );
 }

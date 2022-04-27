@@ -1,10 +1,11 @@
 import React from "react";
 import { PageLayout } from "./components/PageLayout";
+import { MainTab } from "./components/MainTab";
 
 function App() {
   return (
       <PageLayout>
-          <p>This is the main app content!</p>
+          <MainTab/>
       </PageLayout>
   );
 }
