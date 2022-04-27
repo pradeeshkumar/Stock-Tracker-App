@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.scss";
 import { PageLayout } from "./components/PageLayout";
 import { MainTab } from "./components/MainTab";
 

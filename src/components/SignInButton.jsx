@@ -15,9 +15,11 @@ export const SignInButton = () => {
     const { instance } = useMsal();
 
     return (
-            <div className="text-center">
-                <div  className="mt-5 mb-2 pt-5 pb-2">Sign In to StockTrackerApp</div>
-                <Button variant="secondary" className="mr-auto w-25" onClick={() => handleLogin(instance)}>Sign in</Button>
+            <div className="signIn">
+                <div>
+                <div className="signIn-hdr mb-2 pb-2">StockTrackerApp</div>
+                <Button variant="secondary" className="mr-auto" onClick={() => handleLogin(instance)}>Sign in</Button>
+                </div>
             </div>
     );
 }
