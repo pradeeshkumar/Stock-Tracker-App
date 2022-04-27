@@ -19,3 +19,7 @@ export const msalConfig = {
   export const graphConfig = {
       graphMeEndpoint: "https://graph.microsoft.com/User.Read"
   };
+
+  export const logoutRequest = {
+    scopes: ["User.Read"]
+  }
