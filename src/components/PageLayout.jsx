@@ -11,10 +11,17 @@ export const PageLayout = (props) => {
 
     return (
         <>
-            <Navbar bg="primary" variant="dark">
+           { isAuthenticated ? 
+            <div>
                 <a className="navbar-brand" href="/">STA Login</a>
-                { isAuthenticated ? <span>Signed In</span> : <SignInButton /> }
+                <SignInButton /> 
+            </div>
+           :
+            <Navbar bg="primary" variant="dark">
+                <a className="navbar-brand" href="/">Logout</a>                
             </Navbar>
+           }
+        
             {props.children}
         </>
     );
