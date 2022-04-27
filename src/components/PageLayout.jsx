@@ -13,14 +13,15 @@ export const PageLayout = (props) => {
     return (
         <>
            { isAuthenticated ? 
-            <div>
-                <div>STA Login</div>
-                <SignInButton /> 
-            </div>
-           :
             <Navbar bg="primary" variant="dark">
-                <SignOutButton />               
+            <SignOutButton />               
             </Navbar>
+           :
+            
+            <div>
+            <div>STA Login</div>
+            <SignInButton /> 
+            </div>
            }
         
             {props.children}
