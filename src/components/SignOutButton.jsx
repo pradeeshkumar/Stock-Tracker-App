@@ -24,7 +24,7 @@ export const SignOutButton = () => {
         <Navbar bg="light" expand="lg">
             <Container>
                 <Navbar.Brand href="#">STA</Navbar.Brand>
-                <Button variant="secondary" className="mr-auto" onClick={() => signOutClickHandler(instance)}>Sign Out</Button>
+                <Button variant="secondary" className="float-end" onClick={() => signOutClickHandler(instance)}>Sign Out</Button>
             </Container>
         </Navbar>
     );

@@ -12,14 +12,20 @@ export const PageLayout = (props) => {
     return (
         <>
            { isAuthenticated ? 
-            <div className="container-fluid">  
+           <div>
+            <div className="container-fluid bg-primary">  
                 <Container>
                 <SignOutButton />
-                <Row>                      
-                    <Col>{props.children}</Col>
-                </Row> 
                 </Container>
-            </div>  
+            </div>
+            <div className="container-fluid">  
+                <Container>
+                    <Row>                      
+                        <Col>{props.children}</Col>
+                    </Row> 
+                </Container>
+             </div>  
+             </div>
             :
             <div className="container-fluid"> 
                 <Container>
