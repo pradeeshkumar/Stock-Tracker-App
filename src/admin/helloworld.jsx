@@ -2,7 +2,7 @@ const helloworld = (props) => {
     return (
         <>
         <div>
-            {this.gethelloworld()}
+            {gethelloworld()}
         </div>
         </>
     )
