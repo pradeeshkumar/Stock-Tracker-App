@@ -1,4 +1,4 @@
-export const helloworld = (props) => {
+const helloworld = (props) => {
     return (
         <>
         <div>
