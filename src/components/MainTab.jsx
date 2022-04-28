@@ -1,7 +1,6 @@
 import React from "react";
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import '../admin/Details'
 import Details from "../admin/Details";
 export const MainTab = () => {
   return (
