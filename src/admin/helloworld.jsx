@@ -10,11 +10,11 @@ export const helloworld = (props) => {
 
 export async function gethelloworld() {
     const res = await fetch("https://dainty-licorice-4d88aa.netlify.app/.netlify/functions/hello");
-   const result = await res.json;
+   let result = await res;
     console.log(result);
     return {
         props: {
-            message: res.message
+            message: result
         }
     }
 }
