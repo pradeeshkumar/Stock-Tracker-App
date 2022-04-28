@@ -18,5 +18,6 @@ export async function gethelloworld() {
         }
     }
 }
+gethelloworld();
 
 export default helloworld;
