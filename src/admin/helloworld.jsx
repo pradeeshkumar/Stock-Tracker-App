@@ -2,7 +2,7 @@ const helloworld = (props) => {
     return (
         <>
         <div>
-            {props.message}
+            {this.gethelloworld()}
         </div>
         </>
     )
@@ -13,9 +13,7 @@ export async function gethelloworld() {
    const result = await res.json();
     console.log(result.message);
     return {
-        props: {
             message: result.message
-        }
     }
 }
 
