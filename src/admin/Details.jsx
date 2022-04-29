@@ -20,7 +20,7 @@ class Details extends Component {
             (result) => {
                 this.setState({
                     isLoaded : true,
-                    posts : result
+                    posts : result.results
                 });
             },
 
