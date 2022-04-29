@@ -47,7 +47,10 @@ class Details extends Component {
                     {
                         posts.map(post => (
                                 <div>
-                                    <p>{post.message}</p>
+                                    <p>{post.companyName}</p>
+                                    <p>{post.symbol}</p>
+                                    <p>{post.exchangeCode}</p>
+                                    <p>{post.industryOrCategory}</p>
                                 </div>
                         ))
                     }

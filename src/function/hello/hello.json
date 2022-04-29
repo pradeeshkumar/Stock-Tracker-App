@@ -1,5 +1,8 @@
 {"results" : [
-    { 
-        "message": "Hello" 
+    {
+        "exchangeCode":"NMS",
+        "symbol":"AAL",
+        "companyName":"American Airlines Group, Inc.",
+        "industryOrCategory":"Industrials"
     }
 ]}
