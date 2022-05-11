@@ -18,7 +18,7 @@ export const SignInButton = () => {
             <div className="signIn">
                 <div>
                 <div className="signIn-hdr mb-2 pb-2">StockTrackerApp</div>
-                <Button variant="secondary" className="mr-auto" onClick={() => handleLogin(instance)}>Sign in</Button>
+                <Button variant="secondary" className="mr-auto" onClick={() => handleLogin(instance)}>Microsoft Sign in</Button>
                 </div>
             </div>
     );
