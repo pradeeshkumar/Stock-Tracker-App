@@ -1,7 +1,7 @@
 import React from "react";
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
-import Details from "../admin/Details";
+import Details from "../analyst/Details";
 export const MainTab = () => {
   return (
     <Tabs defaultActiveKey="Details" id="uncontrolled-tab-example" className="mb-3">
