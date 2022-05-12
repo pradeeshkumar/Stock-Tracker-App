@@ -2,6 +2,7 @@ import React from "react";
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Details from "../analyst/Details";
+import Favorites from "../analyst/Favorites";
 export const MainTab = () => {
   return (
     <Tabs defaultActiveKey="Details" id="uncontrolled-tab-example" className="mb-3">
@@ -9,6 +10,7 @@ export const MainTab = () => {
           <Details />
         </Tab>
         <Tab eventKey="Preferences" title="Preferences">
+          <Favorites />
         </Tab>
     </Tabs>
   )
