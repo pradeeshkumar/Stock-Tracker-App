@@ -3,7 +3,7 @@ const readAll = () => {
       return response.json()
     })
   }
-
-export default {
-    readAll: readAll
-}
+const allstock = {
+  readAll: readAll
+};
+export default allstock;
