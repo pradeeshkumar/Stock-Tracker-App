@@ -26,7 +26,6 @@ const rows = [
 
 export default function DataTable() {
     const removeRow = () => alert("Added to Fav list");
-    const addRow = () => alert("Removed From Fav list");
     return (
         <div className="analyst-panel" style={{ height: 400, width: '100%' }}>
             <Button variant="outlined" onClick={removeRow}>
