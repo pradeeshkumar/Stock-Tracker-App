@@ -5,13 +5,16 @@ import Details from "../analyst/Details";
 import Favorites from "../analyst/Favorites";
 export const MainTab = () => {
   return (
-    <Tabs defaultActiveKey="Details" id="uncontrolled-tab-example" className="mb-3">
-        <Tab eventKey="Details" title="Details">
-          <Details />
-        </Tab>
-        <Tab eventKey="Preferences" title="Preferences">
-          <Favorites />
-        </Tab>
-    </Tabs>
+    <div>
+      <h2>Analst View</h2>
+      <Tabs defaultActiveKey="Details" id="uncontrolled-tab-example" className="mb-3">
+          <Tab eventKey="Details" title="Details">
+            <Details />
+          </Tab>
+          <Tab eventKey="Preferences" title="Preferences">
+            <Favorites />
+          </Tab>
+      </Tabs>
+    </div>
   )
 }
