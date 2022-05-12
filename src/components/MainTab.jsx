@@ -11,7 +11,7 @@ export const MainTab = () => {
           <Tab eventKey="Details" title="Details">
             <Details />
           </Tab>
-          <Tab eventKey="Preferences" title="Preferences">
+          <Tab eventKey="Favorites" title="Favorites">
             <Favorites />
           </Tab>
       </Tabs>
