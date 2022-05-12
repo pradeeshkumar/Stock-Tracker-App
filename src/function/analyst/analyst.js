@@ -2,8 +2,10 @@ const faunadb = require("faunadb");
 
 const q = faunadb.query
 const client = new faunadb.Client({
-  secret: process.env.DB_KEY
-})
+  secret: process.env.DB_KEY,
+  domain: 'db.fauna.com',
+  scheme: 'https',
+});
 
 exports.handler = (event, context, callback) => {
   console.log("Function `todo-read-all` invoked")
