@@ -1,6 +1,7 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import Button from '@mui/material/Button';
 import { DataGrid } from '@mui/x-data-grid';
+import api from '../utils/api'
 
 const columns = [
     { field: 'symbol', headerName: 'SYMBOL', width: 150 },
@@ -8,8 +9,7 @@ const columns = [
     { field: 'industryOrCategory', headerName: 'industry / Category', width: 300 },
     { field: 'exchangeCode', headerName: 'Exchange Code', width: 200 }
 ];
-
-const rows = [
+/*const rows = [
     {
         "exchangeCode": "NMS",
         "symbol": "AAL",
@@ -71,9 +71,16 @@ const rows = [
         "industryOrCategory": "Financial Services"
     }
 ];
-
+*/
 export default function DataTable() {
     const removeRow = () => alert("Added to Fav list");
+    const [tableData, setTableData] = useState([])
+    useEffect(() => {
+        api.readAll()
+          .then((data) => data[0].data.results)
+          .then((data) => setTableData(data))
+    
+    }, []);
     return (
         <div className="analyst-panel" style={{ height: 400, width: '100%' }}>
             <Button variant="outlined" onClick={removeRow}>
@@ -81,7 +88,7 @@ export default function DataTable() {
             </Button>
             <DataGrid
                 getRowId={(row) => row.symbol}
-                rows={rows}
+                rows={tableData}
                 columns={columns}
                 pageSize={5}
                 rowsPerPageOptions={[5]}

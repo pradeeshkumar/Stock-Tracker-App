@@ -11,7 +11,7 @@ export const PageLayout = (props) => {
     const isAuthenticated = useIsAuthenticated();
     return (
         <>
-           { isAuthenticated ? 
+           { !isAuthenticated ? 
            <div>
             <div className="container-fluid bg-primary mb-5">  
                 <Container>
